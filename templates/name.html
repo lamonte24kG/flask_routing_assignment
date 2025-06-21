@@ -1,0 +1,16 @@
+<!-- templates/name.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Your Name</title>
+</head>
+<body>
+    <h1>What's your name?</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.name.label }} {{ form.name() }}
+        <br><br>
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
